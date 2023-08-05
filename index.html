@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./dist/output.css">
+    <title>QR</title>
+</head>
+<body>
+    <div class="wrapper m-0 p-0 flex justify-center items-center h-screen bg-gray-950">
+        <div class="flex flex-col w-1/4 h-fit bg-zinc-100 p-3 rounded-md">
+            <h1 class="text-2xl font-bold text-black text-center">QR Code Genarate</h1>
+            <p class="text-lg font-light text-gray-950 mx-3 mt-2">Paste a URL or enter some text</p>
+            <div class="form mx-3 flex flex-col justify-center">
+                <input type="text" class="w-full mx-auto p-4 rounded-sm bg-zinc-300">
+                <button class="bg-black p-4 rounded-sm w-full text-white mx-auto mt-3">Generate</button>
+            </div>
+            <div class="qr hidden flex-col mt-3 mx-auto">
+                <img src="./img/qr-code.png" alt="QR code" class="w-2/3 h-2/3 mx-auto">
+                <button class="bg-black p-4 rounded-3xl text-white mx-auto mt-3">Download QR</button>
+            </div>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
