@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scan QR</title>
+    <link rel="stylesheet" href="./dist/output.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="wrapper m-0 p-0 flex justify-center items-center h-screen bg-gray-950">
+        <a href="./index.html" class="absolute top-5 left-5 lg:top-20 lg:left-20  bg-white p-3 rounded-md"><i class='bx bx-arrow-back'></i> back</a>
+        <div class="flex flex-col w-fit lg:w-1/4 h-fit bg-zinc-100 p-3 rounded-md mx-3">
+            <h1 class="text-2xl font-bold text-black text-center">Scan QR Code</h1>
+            <div>
+                <img src="./img/qr-code.png" alt="QR code" class="codeImg hidden w-2/3 h-2/3 mx-auto">
+                <p class="text-lg font-light text-gray-950 mx-3 mt-2">Choose a QR code</p>
+            </div>
+            <form action="#" class="form mx-3 flex flex-col justify-center">
+                <input type="file" class="w-full mx-auto p-4 rounded-sm bg-zinc-300">
+                <button class="bg-black p-4 rounded-sm w-full text-white mx-auto mt-3">Get Data</button>
+            </form>
+            <div class="qr hidden flex-col mt-3 mx-3">
+                <textarea name="" class="qrText min-w-full border-2 border-black text-left p-3" disabled>This is simple qr code scanner...</textarea>
+                <button class="bg-black p-3 rounded-3xl text-white mx-auto mt-3 w-1/3">Copy</button>
+            </div>
+        </div>
+    </div>
+    <script src="./QRscan.js"></script>
+</body>
+</html>
