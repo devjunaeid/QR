@@ -34,7 +34,14 @@ submitBtn.addEventListener("click", () => {
   });
 });
 
+// remove the generated qr div when qr input field is empty.
+qrInput.addEventListener("keyup", () =>{
+  if(!qrInput.value){
+    qrdiv.classList.remove("flex");
+    qrdiv.classList.add("hidden");
+  }
+});
+
 downlaodImgBtn.addEventListener("click", () =>{
     downloadImage(apiRequest);
 });
-
